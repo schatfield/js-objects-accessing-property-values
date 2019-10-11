@@ -28,11 +28,17 @@ const beatles = {
     ]
 }
 
+const beatleAlbum = beatles.albums[3]
 const beatleMember = beatles.members[1].name
+const beatleBday = beatles.members[1].birth
 const startDate = beatles.history.formed
 const endDate = beatles.history.disbanded
 
+console.log(beatleAlbum)
+console.log(beatleBday)
 console.log(beatleMember)
 console.log(startDate)
 console.log(endDate)
-console.log(beatleMember)
+
+
+console.log(`${beatleMember} was in the Beatles from ${startDate} to ${endDate}. He was born in ${beatleBday}. He contributed heavily to ${beatleAlbum}`)
